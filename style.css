@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: coral;
+  height: 100vh;
+  padding-top: 12rem;
+}
+
+.ball {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: rgb(218, 25, 176);
+  box-shadow: 6px 6px 4px 1px rgba(0, 0, 0, 0.283);
+  position: absolute;
+  left: 10%;
+  top: 64.5%;
+  animation: ballAnimation 5s infinite alternate;
+}
+
+@keyframes ballAnimation {
+  0% {
+    rotate: 360deg;
+    left: 10%;
+    top: 60%;
+  }
+  25% {
+    background-color: aqua;
+  }
+  50% {
+    top: 10%;
+    left: 40%;
+    background-color: red;
+  }
+  75% {
+    background-color: rgb(51, 0, 255);
+  }
+  100% {
+    top: 60%;
+    left: 75%;
+    background-color: yellow;
+  }
+}
+
+.eye {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: rgb(72, 70, 71);
+  position: relative;
+  left: 1.5rem;
+  top: 0.7rem;
+}
+
+.seesaw {
+  height: 30px;
+  width: 900px;
+  border-radius: 50%;
+  position: absolute;
+  left: 10%;
+  top: 80%;
+  background-color: rgb(42, 40, 41);
+  animation: barAnimation 5s infinite alternate;
+}
+
+@keyframes barAnimation {
+  0% {
+    rotate: 4deg;
+  }
+  100% {
+    rotate: -4deg;
+  }
+}
